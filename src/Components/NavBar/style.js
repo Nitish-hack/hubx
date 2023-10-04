@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -13,17 +13,16 @@ export const Wrapper = styled.div`
     line-height: 30px;
     font-family: Roboto;
   }
-  a{
+  a {
     text-decoration: none;
     color: inherit;
     border-bottom: 3px solid transparent;
   }
-  a: hover{
+  a: hover {
     border-bottom: 3px solid #55ccc1;
   }
 
-  
-  .icon-box{
+  .icon-box {
     background: #f7f7f7;
     height: 35px;
     width: 35px;
@@ -39,14 +38,14 @@ export const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    .icon-text{
+    .icon-text {
       display: none;
     }
-    .btn{
+    .btn {
       border-radius: 10px;
       border: none;
       font-weight: 500;
-  }
+    }
   }
 
   .icon-text {
@@ -60,9 +59,14 @@ export const Wrapper = styled.div`
     border-bottom: 3px solid #55ccc1;
   }
 
-  .btn{
-      border-radius: 40px;
-      border: none;
-      font-weight: 500;
+  .btn {
+    border-radius: 40px;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
   }
 `;

@@ -1,34 +1,41 @@
 import React from 'react';
 import { Wrapper } from './style';
+
 import { PlusOutlined, EyeOutlined, PoweroffOutlined, QuestionOutlined } from '@ant-design/icons';
 function index() {
   return (
     <Wrapper>
-      <a href='/' className='bold-20 '>Dashboard</a>
+      <div className='nav-items'>
+        <h3 >Dashboard</h3>
+        <ul>
+          <li className="navlink">
+            <div className='logo '><PlusOutlined /></div>
+            course
+          </li>
+          <li className='navlink'>
+            <div className='logo'><EyeOutlined /></div>
+            Preview home page
+          </li>
 
-      <ul>
-        <li>
-          <div className='icon-box ml-20'><PlusOutlined /></div>
-          <a href='/' className='icon-text'>Create course</a>
-        </li>
-        <li>
-          <div className='icon-box ml-20'><EyeOutlined /></div>
-          <a href='/' className='icon-text'>Preview home page</a>
-        </li>
+          <li className='navlink'>
+            <div className='logo'><EyeOutlined /></div>
+            Preview after login page
+          </li>
+          <li className='navlink'>
+            <div className='logo'><PoweroffOutlined /></div>
+            View welcome screen
+          </li>
+        </ul>
+      </div>
 
-        <li>
-          <div className='icon-box ml-20'><EyeOutlined /></div>
-          <div className='icon-text'>Preview after login page</div>
-        </li>
-        <li>
-          <div className='icon-box ml-20'><PoweroffOutlined /></div>
-          <a href='/' className='icon-text'>View welcome screen</a>
-        </li>
-      </ul>
-      <div className='help'><QuestionOutlined style={{ color: '#fff' }} /></div>
-      <a href='/' className='icon-text'>Help</a>
+      <li className='navlink'>
+        <div className='logo' style={{ background: "rgb(85 204 193)", color: "white" }}><QuestionOutlined /></div>
+        Help
+      </li>
+
     </Wrapper>
   );
 }
 
 export default index;
+
